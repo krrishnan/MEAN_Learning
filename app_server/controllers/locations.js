@@ -1,13 +1,13 @@
 var locationsList = function(req, res, next) {
-    res.render('index', { title: "Home" });
+    res.render('location-list', { title: "Home" });
 }
 
 var locationInfo = function(req, res, next) {
-    res.render('index', { title: "Location info" });
+    res.render('location-info', { title: "Location info" });
 }
 
 var addReview = function(req, res, next) {
-    res.render('index', { title: "Add review" });
+    res.render('location-review-form', { title: "Add review" });
 }
   
 module.exports.locationsList = locationsList;
