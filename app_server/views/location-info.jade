@@ -15,7 +15,8 @@ block content
                             .panel-heading
                                 h2.panel-title Opening hours
                             .panel-body
-                                != openingHours
+                                each openingHour in openingHours
+                                    p #{openingHour.days} : #{openingHour.timing}
                         .panel.panel-primary
                             .panel-heading
                                 h2.panel-title Facilities
@@ -23,7 +24,7 @@ block content
                                 each facility in facilities
                                     span.label.label-warning
                                         span.glyphicon.glyphicon-ok
-                                            &nbsp;facility
+                                            &nbsp; facility
                                         &nbsp;
                 .col-xs-12.col-sm-6.location-map
                     .panel.panel-primary
